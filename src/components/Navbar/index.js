@@ -28,7 +28,7 @@ const Navbar = () => {
           <NavLink href='#experience'>Experience</NavLink>
           <NavLink href='#projects'>Projects</NavLink>
           <NavLink href='#education'>Education</NavLink>
-          <NavLink href='https://sayak.dev/gsoc-faqs/'>Blog</NavLink>
+          <NavLink href='https://saisreesatya-blog.pages.dev/'>Blog</NavLink>
         </NavItems>
 
         <ButtonContainer>
@@ -52,7 +52,7 @@ const Navbar = () => {
             <MobileLink href='#education' onClick={() => {
               setIsOpen(!isOpen)
             }}>Education</MobileLink>
-            <MobileLink href='https://sayak.dev/gsoc-faqs/' onClick={() => {
+            <MobileLink href='https://saisreesatya-blog.pages.dev/' onClick={() => {
               setIsOpen(!isOpen)
             }}>Blog</MobileLink>
             <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
