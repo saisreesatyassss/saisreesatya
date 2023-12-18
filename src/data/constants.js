@@ -526,7 +526,7 @@ export const projects = [
     description:
       "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-5f2ed.appspot.com/o/1693808200950%20(1).jpeg?alt=media&token=57d26c57-ed32-4318-89e7-db2fa0abc0f5",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-5f2ed.appspot.com/o/1693808200950%20(1).jpeg?alt=media&token=099cfba3-1fa2-4fa6-8f88-70003689e288",
     tags: ["Python",  "QR", "Flask", "Pickle", "React"],
     category: "machine learning",
     github: "https://github.com/saisreesatyassss/SMART-ATTENDANCE-MANAGEMENT-SYSTEM-WITH-FACIAL-RECOGNITION",
