@@ -541,7 +541,7 @@ export const projects = [
                 "An interactive frontend project built using Next.js, leveraging its server-side rendering capabilities for efficient page loading. The project utilizes next/font to optimize and load the Inter font seamlessly. Edit pages in the app/pages directory and see live updates as you modify files.    ",
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5f2ed.appspot.com/o/Irdl.jpg?alt=media&token=ac758500-1abd-480a-b5ed-93d3188874c6",
-    tags: ["Next.js", "React", "Server-side Rendering", "Frontend Development", "Inter Font", "Vercel"],
+    tags: ["Next.js", "React", "Server-side Rendering", "Frontend Development","Vercel"],
     category: "web app",
     github: "https://github.com/saisreesatyassss/irdl",
     webapp: "https://vercel.com/saisreesatyas-projects/irdl",
