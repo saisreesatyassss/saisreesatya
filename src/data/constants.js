@@ -10,7 +10,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/saisreesatyassss",
   resume:
-    "https://drive.google.com/file/d/1oU69nqlxylgsd_ZnmyXPj-i4j8Ely8Y8/view?usp=drive_link",
+    "https://saisreesatyassss.github.io/CV/cv.pdf",
   linkedin: "https://www.linkedin.com/in/padala-saisrisatya-subramaneswar-359998247/",
   twitter: "https://twitter.com/saisreesatya000",
   insta: "https://www.instagram.com/saisreesatya/",
@@ -262,22 +262,22 @@ export const experiences = [
 
     skills: [
       "MERN Stack",
-  "React.js",
-  "Node.js",
-  "Express.js",
-  "MongoDB",
-  "RESTful APIs",
-  "JavaScript",
-  "HTML5",
-  "CSS3",
-  "Responsive Design",
-  "User Authentication",
-  "Code Optimization",
-  "Collaboration",
-  "Version Control (Git)",
-  "Agile Methodologies",
-  "Troubleshooting",
-  "Continuous Learning",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "RESTful APIs",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Responsive Design",
+      "User Authentication",
+      "Code Optimization",
+      "Collaboration",
+      "Version Control (Git)",
+      "Agile Methodologies",
+      "Troubleshooting",
+      "Continuous Learning",
     ],
   },
   // {
@@ -441,19 +441,7 @@ export const projects = [
     github: "https://github.com/saisreesatyassss/hostelpro1",
     webapp: "https://saisreesatyassss.github.io/hostelpro1/SignUp.html",
   },
-  // {
-  //   id:  ,
-  //   title: "",
-  //   date: "Jun 2023",
-  //   description:
-  //     "",
-  //   image:
-  //     " ",
-  //   tags: [" ", "", ""],
-  //   category: "android app",
-  //   github: " ",
-  //   webapp: " ",
-  // },
+
   // {
   //   id: 4,
   //   title: "Whatsapp Clone",
@@ -531,6 +519,45 @@ export const projects = [
     category: "machine learning",
     github: "https://github.com/saisreesatyassss/SMART-ATTENDANCE-MANAGEMENT-SYSTEM-WITH-FACIAL-RECOGNITION",
     webapp: " ",
+  },
+  {
+    id: 9,
+    title: "Interactive Web Design",
+    date: "Aug 2023",
+    description:
+      "A fully animated and interactive website designed using HTML, CSS, JavaScript, and Bootstrap. It includes cool animations, user-friendly interfaces, and various engaging elements to enhance user experience.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-5f2ed.appspot.com/o/Skmc.jpg?alt=media&token=f351669b-523e-4396-b27c-45fb76b05ee0",
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "Animation"],
+    category: "web app",
+    github: "https://github.com/saisreesatyassss/skmc",
+    webapp: "https://skmc-1zi.pages.dev/",
+  },
+  {
+    id: 10,
+    title: "Interactive Web Design with Next.js",
+    date: "Oct 2023",
+    description:
+                "An interactive frontend project built using Next.js, leveraging its server-side rendering capabilities for efficient page loading. The project utilizes next/font to optimize and load the Inter font seamlessly. Edit pages in the app/pages directory and see live updates as you modify files.    ",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-5f2ed.appspot.com/o/Irdl.jpg?alt=media&token=ac758500-1abd-480a-b5ed-93d3188874c6",
+    tags: ["Next.js", "React", "Server-side Rendering", "Frontend Development", "Inter Font", "Vercel"],
+    category: "web app",
+    github: "https://github.com/saisreesatyassss/irdl",
+    webapp: "https://vercel.com/saisreesatyas-projects/irdl",
+  },
+  {
+    id: 11,
+    title: "MediBot: Your Virtual Healthcare Assistant",
+    date: "Aug 2023",
+    description:
+               "Experience seamless healthcare access with MediBot, your reliable virtual assistant powered by AI. Enjoy personalized medical advice, AI chatbot support, secure data privacy with facial recognition, and virtual doctor consultations from anywhere, anytime.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-5f2ed.appspot.com/o/medibot.jpg?alt=media&token=376b890b-e895-48a0-be19-478664e0c101",
+    tags:["Next.js", "AI", "Chatbot", "Virtual Healthcare", "Telemedicine", "Facial Recognition", "Healthcare AI"],
+    category: "web app",
+    github: "https://github.com/saisreesatyassss/MediBotFrontend",
+    webapp: "https://psssshms.vercel.app/",
   },
 ];
 
