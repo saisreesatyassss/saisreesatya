@@ -481,32 +481,7 @@ export const projects = [
   //   github: "https://github.com/rishavchanda/Breaking-Bad",
   //   webapp: "https://breaking-bad-webapp.netlify.app",
   // },
-  // {
-  //   id: 7,
-  //   title: "Quiz App",
-  //   date: "Dec 2020 - Jan 2021",
-  //   description:
-  //     "A android quiz app made with Java and Firebase. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the quiz categories and can create a new quiz. It has a leaderboard where users can see the top 10 scorers. It has a search bar where users can search for a particular quiz.",
-  //   image:
-  //     " ",
-  //   tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
-  //   category: "android app",
-  //   github: "https://github.com/rishavchanda/Quiz-Earn",
-  //   webapp: "",
-  // },
-  // {
-  //   id: 10,
-  //   title: "Face Recognition",
-  //   date: "Jan 2021",
-  //   description:
-  //     "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
-  //   image:
-  //     "",
-  //   tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-  //   category: "machine learning",
-  //   github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-  //   webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-  // },
+
   {
     id: 8,
     title: "Face Recognition",
@@ -559,6 +534,34 @@ export const projects = [
     github: "https://github.com/saisreesatyassss/MediBotFrontend",
     webapp: "https://psssshms.vercel.app/",
   },
+
+    {
+    id: 12,
+    title: "Persona AI - Your Intelligent Language Model",
+    date: "Jun 2024",
+    description:
+               " Persona AI, an advanced language model developed by Snowflake AI Research. Enter your Replicate API token below to get started and upload a text file containing persona data for analysis. Customize model parameters such as temperature and top_p to tailor responses. Ask me anything and experience efficient, intelligent interactions.",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-5f2ed.appspot.com/o/personaai.jpg?alt=media&token=e629d7ce-5f30-4710-bade-9d026b9776ba",
+    tags:["Language Model", "AI", "NLP", "Snowflake AI ", "Text Analysis", "API Integration"],
+    category: "machine learning",
+    github: "https://github.com/saisreesatyassss/snowflake-arctic-chatbot",
+    webapp: "https://personaai.streamlit.app/",
+  },
+  //   {
+  //   id: 11,
+  //   title: "",
+  //   date: "",
+  //   description:
+  //              "",
+  //   image:
+  //     "",
+  //   tags:["", "", "", "", "", "", ""],
+  //   category: "web app",
+  //   github: "  ",
+  //   webapp: "  ",
+  // },
+
 ];
 
 export const TimeLineData = [
