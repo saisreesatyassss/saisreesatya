@@ -442,6 +442,9 @@ const DevCard = () => {
         
         <div style={styles.buttonGroup}>
           <button 
+              href="https://devcard.streamlit.app/"
+              target="_blank"
+              rel="noopener noreferrer"
             style={{
               ...styles.primaryButton,
               transform: isHovered ? 'scale(1.05)' : 'scale(1)',
