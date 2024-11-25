@@ -82,6 +82,7 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
+import DevCard from "./components/DevCard";
 // import Blog from './components/Blog'; // Uncomment if needed
 
 // Styled components for Body and Wrapper
@@ -133,6 +134,7 @@ function App() {
             />
             {/* Birthday page route */}
             <Route path="/Birthday" element={<Birthday />} />
+            <Route path="/devcard" element={<DevCard />} />
           </Routes>
         {/* </Body> */}
       </Router>
