@@ -441,20 +441,25 @@ const DevCard = () => {
         </p>
         
         <div style={styles.buttonGroup}>
-          <button 
-              href="https://devcard.streamlit.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            style={{
-              ...styles.primaryButton,
-              transform: isHovered ? 'scale(1.05)' : 'scale(1)',
-            }}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            Create Your DevCard
-            <ArrowRight size={20} style={{ marginLeft: '0.5rem' }} />
-          </button>
+              <a 
+        href="https://devcard.streamlit.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          ...styles.primaryButton,
+          display: 'inline-flex', // Ensures inline-block for button-like behavior
+          alignItems: 'center',
+          justifyContent: 'center',
+          textDecoration: 'none', // Removes underline
+          transform: isHovered ? 'scale(1.05)' : 'scale(1)',
+        }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        Create Your DevCard
+        <ArrowRight size={20} style={{ marginLeft: '0.5rem' }} />
+      </a>
+
           <button style={styles.secondaryButton}>
             View Templates
           </button>
