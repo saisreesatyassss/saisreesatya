@@ -193,7 +193,7 @@ import { ArrowRight, Code, Share2, Palette, Github, Twitter, Star, Sparkles, Dow
 const styles = {
   container: {
     minHeight: '100vh',
-    background: 'linear-gradient(135deg, #f0f5ff 0%, #e8eaff 50%, #f3f0ff 100%)',
+    background: 'linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 50%, #EDE9FF 100%)',
   },
   nav: {
     position: 'fixed',
@@ -204,7 +204,7 @@ const styles = {
     zIndex: 50,
     boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
   },
-  navInner: {
+  navContent: {
     maxWidth: '1200px',
     margin: '0 auto',
     padding: '1rem',
@@ -230,16 +230,11 @@ const styles = {
     cursor: 'pointer',
     padding: '0.5rem',
     transition: 'color 0.3s',
-    '&:hover': {
-      color: '#2563EB',
-    },
   },
   hero: {
     paddingTop: '8rem',
     paddingBottom: '5rem',
     textAlign: 'center',
-  },
-  heroInner: {
     maxWidth: '1200px',
     margin: '0 auto',
     padding: '0 1rem',
@@ -247,13 +242,13 @@ const styles = {
   badge: {
     display: 'inline-flex',
     alignItems: 'center',
-    padding: '0.25rem 1rem',
-    background: '#EBF5FF',
+    padding: '0.5rem 1rem',
+    background: '#DBEAFE',
     borderRadius: '9999px',
     color: '#2563EB',
     marginBottom: '1rem',
   },
-  title: {
+  heading: {
     fontSize: '3.75rem',
     fontWeight: 'bold',
     marginBottom: '1.5rem',
@@ -265,7 +260,7 @@ const styles = {
   subtitle: {
     fontSize: '1.25rem',
     color: '#4B5563',
-    maxWidth: '600px',
+    maxWidth: '36rem',
     margin: '0 auto 2rem',
   },
   buttonGroup: {
@@ -285,10 +280,6 @@ const styles = {
     transition: 'all 0.3s',
     border: 'none',
     cursor: 'pointer',
-    '&:hover': {
-      background: '#1D4ED8',
-      transform: 'scale(1.05)',
-    },
   },
   secondaryButton: {
     display: 'inline-flex',
@@ -302,23 +293,20 @@ const styles = {
     border: '2px solid #2563EB',
     transition: 'all 0.3s',
     cursor: 'pointer',
-    '&:hover': {
-      background: '#EBF5FF',
-    },
   },
   statsSection: {
     padding: '3rem 1rem',
-  },
-  statsGrid: {
     maxWidth: '900px',
     margin: '0 auto',
+  },
+  statsGrid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
     gap: '1.5rem',
   },
   statCard: {
     background: 'white',
-    padding: '1rem',
+    padding: '1.5rem',
     borderRadius: '0.5rem',
     textAlign: 'center',
     boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
@@ -333,6 +321,11 @@ const styles = {
     color: '#4B5563',
     fontSize: '0.875rem',
   },
+  featuresSection: {
+    padding: '4rem 1rem',
+    background: 'rgba(255, 255, 255, 0.5)',
+    backdropFilter: 'blur(8px)',
+  },
   featureCard: {
     background: 'white',
     padding: '1.5rem',
@@ -340,28 +333,23 @@ const styles = {
     boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
     transition: 'all 0.3s',
     cursor: 'pointer',
-    '&:hover': {
-      transform: 'translateY(-4px)',
-      boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
-    },
   },
   featureIcon: {
-    background: '#EBF5FF',
+    background: '#DBEAFE',
     padding: '0.5rem',
     borderRadius: '0.5rem',
     color: '#2563EB',
     marginBottom: '1rem',
   },
-  featureTitle: {
-    fontSize: '1.25rem',
-    fontWeight: '600',
-    marginBottom: '0.5rem',
-  },
-  featureDescription: {
-    color: '#4B5563',
+  featureGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+    gap: '1.5rem',
+    maxWidth: '1200px',
+    margin: '0 auto',
   },
   alert: {
-    background: '#EBF5FF',
+    background: '#EFF6FF',
     border: '1px solid #BFDBFE',
     borderRadius: '0.5rem',
     padding: '1rem',
@@ -370,96 +358,39 @@ const styles = {
     justifyContent: 'space-between',
     alignItems: 'center',
   },
-  section: {
-    padding: '4rem 1rem',
-  },
-  sectionTitle: {
-    fontSize: '2rem',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginBottom: '3rem',
-  },
-  stepGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)',
-    gap: '2rem',
-    maxWidth: '1200px',
-    margin: '0 auto',
-  },
-  step: {
-    textAlign: 'center',
-    transition: 'transform 0.3s',
-    '&:hover': {
-      transform: 'scale(1.05)',
-    },
-  },
-  stepNumber: {
-    width: '3rem',
-    height: '3rem',
-    background: 'linear-gradient(to right, #2563EB, #4F46E5)',
-    color: 'white',
-    borderRadius: '50%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    margin: '0 auto 1rem',
-    fontSize: '1.25rem',
-    fontWeight: 'bold',
-  },
-  cta: {
-    background: 'linear-gradient(to right, #2563EB, #4F46E5)',
-    color: 'white',
-    padding: '4rem 1rem',
-    textAlign: 'center',
-  },
   footer: {
     background: 'rgba(255, 255, 255, 0.8)',
     backdropFilter: 'blur(8px)',
     padding: '2rem 1rem',
   },
-  footerInner: {
+  footerContent: {
     maxWidth: '1200px',
     margin: '0 auto',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    flexWrap: 'wrap',
   },
-  socialLinks: {
+  socialButtons: {
     display: 'flex',
-    gap: '1.5rem',
+    gap: '1rem',
   },
-  socialButton: {
-    background: 'none',
-    border: 'none',
-    color: '#4B5563',
-    cursor: 'pointer',
-    transition: 'color 0.3s',
-    '&:hover': {
-      color: '#2563EB',
-    },
-  },
-  // Media queries
   '@media (max-width: 768px)': {
-    hero: {
-      paddingTop: '6rem',
-    },
-    title: {
+    heading: {
       fontSize: '2.5rem',
     },
     statsGrid: {
       gridTemplateColumns: '1fr',
     },
-    stepGrid: {
-      gridTemplateColumns: '1fr',
-    },
-    footerInner: {
+    footerContent: {
       flexDirection: 'column',
       gap: '1rem',
+      textAlign: 'center',
     },
-  },
+  }
 };
 
-// Component definition remains largely the same, just update className to style
+// Component implementation remains similar, just using the styles object
 const DevCard = () => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -484,67 +415,98 @@ const DevCard = () => {
   return (
     <div style={styles.container}>
       <nav style={styles.nav}>
-        <div style={styles.navInner}>
+        <div style={styles.navContent}>
           <div style={styles.logo}>
-            <Sparkles style={{ color: '#2563EB' }} />
+            <Sparkles size={24} color="#2563EB" />
             <span>DevCard</span>
           </div>
           <div style={styles.navLinks}>
-            <button style={styles.navButton}
-                    onClick={() => document.getElementById('features').scrollIntoView({ behavior: 'smooth' })}>
-              Features
-            </button>
-            <button style={styles.navButton}
-                    onClick={() => document.getElementById('showcase').scrollIntoView({ behavior: 'smooth' })}>
-              Showcase
-            </button>
-            <button style={styles.navButton}
-                    onClick={() => document.getElementById('templates').scrollIntoView({ behavior: 'smooth' })}>
-              Templates
-            </button>
+            <button style={styles.navButton}>Features</button>
+            <button style={styles.navButton}>Showcase</button>
+            <button style={styles.navButton}>Templates</button>
           </div>
         </div>
       </nav>
 
-      <section style={styles.hero}>
-        <div style={styles.heroInner}>
-          <div style={styles.badge}>
-            <Star style={{ width: '1rem', height: '1rem', marginRight: '0.5rem' }} />
-            New AI-Powered Card Generation
+      <div style={styles.hero}>
+        <div style={styles.badge}>
+          <Star size={16} style={{ marginRight: '0.5rem' }} />
+          New AI-Powered Card Generation
+        </div>
+        <h1 style={styles.heading}>
+          Your Developer Story,<br />Beautifully Presented
+        </h1>
+        <p style={styles.subtitle}>
+          Create stunning developer cards that showcase your skills, projects, and achievements in seconds.
+        </p>
+        
+        <div style={styles.buttonGroup}>
+          <button 
+            style={{
+              ...styles.primaryButton,
+              transform: isHovered ? 'scale(1.05)' : 'scale(1)',
+            }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            Create Your DevCard
+            <ArrowRight size={20} style={{ marginLeft: '0.5rem' }} />
+          </button>
+          <button style={styles.secondaryButton}>
+            View Templates
+          </button>
+        </div>
+      </div>
+
+      <div style={styles.statsSection}>
+        <div style={styles.statsGrid}>
+          {[
+            { number: "1+", label: "Developer Cards Created" },
+            { number: "1", label: "Custom Templates" },
+            { number: "60%", label: "Satisfaction Rate" }
+          ].map((stat, index) => (
+            <div key={index} style={styles.statCard}>
+              <div style={styles.statNumber}>{stat.number}</div>
+              <div style={styles.statLabel}>{stat.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div style={styles.featuresSection}>
+        <div style={styles.featureGrid}>
+          {features.map((feature, index) => {
+            const Icon = feature.icon;
+            return (
+              <div key={index} style={styles.featureCard}>
+                <div style={styles.featureIcon}>
+                  <Icon size={24} />
+                </div>
+                <h3 style={{ marginBottom: '0.5rem', fontWeight: '600' }}>{feature.title}</h3>
+                <p style={{ color: '#4B5563' }}>{feature.description}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div style={styles.alert}>
+        <span>Try our new AI-powered template generation!</span>
+        <ExternalLink size={20} color="#2563EB" />
+      </div>
+
+      <footer style={styles.footer}>
+        <div style={styles.footerContent}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <Sparkles size={20} color="#2563EB" />
+            © 2024 DevCard. Create something amazing.
           </div>
-          <h1 style={styles.title}>
-            Your Developer Story,<br />Beautifully Presented
-          </h1>
-          <p style={styles.subtitle}>
-            Create stunning developer cards that showcase your skills, projects, and achievements in seconds.
-          </p>
-          
-          <div style={styles.buttonGroup}>
-            <a href="https://devcard.streamlit.app/"
-               target="_blank"
-               rel="noopener noreferrer"
-               style={styles.primaryButton}
-               onMouseEnter={() => setIsHovered(true)}
-               onMouseLeave={() => setIsHovered(false)}>
-              Create Your DevCard
-              <ArrowRight style={{
-                marginLeft: '0.5rem',
-                transform: isHovered ? 'translateX(4px)' : 'translateX(0)',
-                transition: 'transform 0.3s'
-              }} />
-            </a>
-            
-            <button style={styles.secondaryButton}
-                    onClick={() => document.getElementById('templates').scrollIntoView({ behavior: 'smooth' })}>
-              View Templates
-            </button>
+          <div style={styles.socialButtons}>
+            <button style={styles.navButton}><Github size={24} /></button>
+            <button style={styles.navButton}><Twitter size={24} /></button>
           </div>
         </div>
-      </section>
-
-      {/* Rest of the sections follow the same pattern - 
-          replace className with style and use the styles object */}
-      {/* ... */}
+      </footer>
     </div>
   );
 };
